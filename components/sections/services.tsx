@@ -6,6 +6,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 const services = [
   {
     icon: PenTool,
+    iconColor: "text-orange-500",
+    bgColor: "bg-orange-100",
     title: "Content Writing",
     description:
       "Engaging blog posts, articles, and web copy that tell your brand's story and connect with your audience.",
@@ -13,6 +15,8 @@ const services = [
   },
   {
     icon: Palette,
+    iconColor: "text-orange-500",
+    bgColor: "bg-orange-100",
     title: "Creative Design",
     description:
       "Visual storytelling through stunning graphics, infographics, and brand materials that capture attention.",
@@ -20,24 +24,32 @@ const services = [
   },
   {
     icon: Megaphone,
+    iconColor: "text-orange-500",
+    bgColor: "bg-orange-100",
     title: "Social Media Marketing",
     description: "Strategic social media campaigns that build communities and drive engagement across all platforms.",
     features: ["Content Strategy", "Community Management", "Paid Advertising"],
   },
   {
     icon: Video,
+    iconColor: "text-orange-500",
+    bgColor: "bg-orange-100",
     title: "Video Production",
     description: "Compelling video content from concept to completion, including promotional videos and documentaries.",
     features: ["Scriptwriting", "Production", "Post-Production"],
   },
   {
     icon: BarChart3,
+    iconColor: "text-orange-500",
+    bgColor: "bg-orange-100",
     title: "Analytics & Strategy",
     description: "Data-driven insights and strategic planning to optimize your content performance and ROI.",
     features: ["Performance Tracking", "Strategy Development", "ROI Analysis"],
   },
   {
     icon: Globe,
+    iconColor: "text-orange-500",
+    bgColor: "bg-orange-100",
     title: "Digital Marketing",
     description: "Comprehensive digital marketing solutions including SEO, PPC, and email marketing campaigns.",
     features: ["SEO Optimization", "PPC Campaigns", "Email Marketing"],
@@ -67,8 +79,10 @@ export default function Services() {
                 className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg hover:-translate-y-2"
               >
                 <CardHeader className="text-center pb-4">
-                  <div className="mx-auto w-16 h-16 bg-gradient-to-br from-brand-green to-brand-orange rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <IconComponent className="h-8 w-8 text-white" />
+                  <div
+                    className={`w-12 h-12 ${service.bgColor} rounded-lg flex items-center justify-center flex-shrink-0`}
+                  >
+                    <IconComponent className={`h-6 w-6  ${service.iconColor}`} />
                   </div>
                   <CardTitle className="text-xl font-bold text-gray-900 group-hover:text-brand-orange transition-colors">
                     {service.title}
