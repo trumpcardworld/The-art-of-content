@@ -12,24 +12,32 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 const contactInfo = [
   {
     icon: Mail,
+    iconColor: "text-orange-500",
+    bgColor: "bg-orange-100",
     title: "Email Us",
     details: "hello@theartofcontent.com",
     description: "Send us an email anytime",
   },
   {
     icon: Phone,
+    iconColor: "text-orange-500",
+    bgColor: "bg-orange-100",
     title: "Call Us",
     details: "+1 (555) 123-4567",
     description: "Mon-Fri from 8am to 6pm",
   },
   {
     icon: MapPin,
+    iconColor: "text-orange-500",
+    bgColor: "bg-orange-100",
     title: "Visit Us",
     details: "123 Creative Street, Design City, DC 12345",
     description: "Come say hello at our office",
   },
   {
     icon: Clock,
+    iconColor: "text-orange-500",
+    bgColor: "bg-orange-100",
     title: "Business Hours",
     details: "Mon-Fri: 8am-6pm",
     description: "Weekend support available",
@@ -82,8 +90,10 @@ export default function Contact() {
                   <Card key={index} className="border-0 shadow-md hover:shadow-lg transition-shadow duration-300">
                     <CardContent className="p-6">
                       <div className="flex items-start space-x-4">
-                        <div className="w-12 h-12 bg-gradient-to-br from-brand-green to-brand-orange rounded-full flex items-center justify-center flex-shrink-0">
-                          <IconComponent className="h-6 w-6 text-white" />
+                        <div
+                          className={`w-12 h-12 ${info.bgColor} rounded-lg flex items-center justify-center flex-shrink-0`}
+                        >
+                          <IconComponent className={`h-6 w-6  ${info.iconColor}`} />
                         </div>
                         <div>
                           <h3 className="font-semibold text-gray-900 mb-1">{info.title}</h3>
