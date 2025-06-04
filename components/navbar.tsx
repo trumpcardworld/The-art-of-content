@@ -53,9 +53,8 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white/95 backdrop-blur-md shadow-lg" : "bg-transparent"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-white/95 backdrop-blur-md shadow-lg" : "bg-transparent"
+        }`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
@@ -73,9 +72,8 @@ export default function Navbar() {
                 alt="The Art of Content"
                 width={200}
                 height={50}
-                className={`h-8 lg:h-10 w-auto transition-all duration-300 ${
-                  isScrolled ? "" : "brightness-0 invert"
-                }`}
+                className={`h-8 lg:h-10 w-auto transition-all duration-300 ${isScrolled ? "" : "brightness-0 invert"
+                  }`}
                 priority
               />
             </Link>
@@ -88,13 +86,12 @@ export default function Navbar() {
                 <button
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
-                  className={`px-3 py-2 text-sm font-medium transition-colors duration-200 hover:text-brand-orange ${
-                    activeSection === item.href.substring(1)
+                  className={`px-3 py-2 text-sm font-medium transition-colors duration-200 hover:text-brand-orange ${activeSection === item.href.substring(1)
                       ? "text-brand-orange border-b-2 border-brand-orange"
                       : isScrolled
                         ? "text-gray-700"
                         : "text-white"
-                  }`}
+                    }`}
                 >
                   {item.name}
                 </button>
@@ -130,9 +127,8 @@ export default function Navbar() {
                     <button
                       key={item.name}
                       onClick={() => scrollToSection(item.href)}
-                      className={`text-left px-4 py-3 text-lg font-medium transition-colors duration-200 hover:text-brand-orange hover:bg-gray-50 rounded-lg ${
-                        activeSection === item.href.substring(1) ? "text-brand-orange bg-orange-50" : "text-gray-700"
-                      }`}
+                      className={`text-left px-4 py-3 text-lg font-medium transition-colors duration-200 hover:text-brand-orange hover:bg-gray-50 rounded-lg ${activeSection === item.href.substring(1) ? "text-brand-orange bg-orange-50" : "text-gray-700"
+                        }`}
                     >
                       {item.name}
                     </button>

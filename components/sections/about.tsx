@@ -1,5 +1,7 @@
 import { Users, Target, Award, Heart } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
+import Image from "next/image"
+import about_img from "../../public/TAC_Marketing-plan.png"
 
 const values = [
   {
@@ -61,9 +63,7 @@ export default function About() {
             <div className="aspect-square bg-gradient-to-br from-brand-green via-brand-orange to-brand-red rounded-2xl p-1">
               <div className="w-full h-full bg-white rounded-xl flex items-center justify-center">
                 <div className="text-center p-8">
-                  <div className="text-6xl font-bold text-brand-orange mb-4">5+</div>
-                  <div className="text-xl font-semibold text-gray-700 mb-2">Years of Excellence</div>
-                  <div className="text-gray-600">Crafting compelling content that converts</div>
+                  <Image src={about_img} alt="about-img"/>
                 </div>
               </div>
             </div>

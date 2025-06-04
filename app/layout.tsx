@@ -4,8 +4,10 @@ import './globals.css'
 export const metadata: Metadata = {
   title: 'The art of content',
   description: 'The art of content',
-  generator: '',
-}
+  icons: {
+    icon: '/favicon.ico',
+  },
+};
 
 export default function RootLayout({
   children,
