@@ -78,11 +78,11 @@ export default function Services() {
                 key={index}
                 className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg hover:-translate-y-2"
               >
-                <CardHeader className="text-center pb-4">
+                <CardHeader className="text-center pb-4 items-center">
                   <div
-                    className={`w-12 h-12 ${service.bgColor} rounded-lg flex items-center justify-center flex-shrink-0`}
+                    className={`w-16 h-16 mb-4 ${service.bgColor} rounded-lg flex items-center justify-center flex-shrink-0`}
                   >
-                    <IconComponent className={`h-6 w-6  ${service.iconColor}`} />
+                    <IconComponent className={`h-8 w-8  ${service.iconColor}`} />
                   </div>
                   <CardTitle className="text-xl font-bold text-gray-900 group-hover:text-brand-orange transition-colors">
                     {service.title}
